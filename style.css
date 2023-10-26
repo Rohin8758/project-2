@@ -489,5 +489,28 @@ body {
 .section3-products{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+.outer-image{
+    position: relative;
+    width: 330px;
+    height: 371px;
+}
+.outer-image img{
+    width: 330px;
+    height: 371px;
+}
+.inner-image{
+    position: absolute;
+    top: 0%;
+    width: 330px;
+    height: 371px;
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: 0.5s;
+}
+.outer-image:hover .inner-image{
+    opacity: 1;
+    cursor: pointer;
 }
 /* =========================section4=end=================== */
