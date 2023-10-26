@@ -464,7 +464,6 @@ body {
 }
 .section3-fonts{
     width: 586px;
-    /* text-align: center; */
     margin: auto;
 }
 .iner-section3-font span{
@@ -478,13 +477,7 @@ body {
     color: #666666;
     text-align: center;
     font-weight: 500;
-}
-/* =========================section3=end=================== */
-/* =========================section4=start=================== */
-.section3{
-    background-color: #FFFFFF;
-    width: 100%;
-    height: 100%;
+    margin-bottom: 30px;
 }
 .section3-products{
     display: grid;
@@ -495,6 +488,7 @@ body {
     position: relative;
     width: 330px;
     height: 371px;
+    margin: 40px 0px;
 }
 .outer-image img{
     width: 330px;
@@ -505,7 +499,6 @@ body {
     top: 0%;
     width: 330px;
     height: 371px;
-    /* visibility: hidden; */
     opacity: 0;
     transition: 0.5s;
 }
@@ -513,4 +506,97 @@ body {
     opacity: 1;
     cursor: pointer;
 }
+.section3-products-fonts h3{
+    margin: 20px 0px 10px 0px;
+    text-transform: capitalize;
+}
+.hovereffect-icons{
+    position: absolute;
+    z-index: 111;
+    top: 0%;
+    right: 5%;
+    opacity: 0;
+}
+.outer-image:hover .hovereffect-icons{
+    opacity: 1;
+    transition: 0.5s;
+}
+.mainfour-icon{
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+    /* margin-bottom: 50px; */
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.heart-icon{
+    margin: 20px 0px 50px 0px;
+    background: none;
+}
+.mainfour-icon:hover{
+    background-color: #ff6f2e;
+    color: #ffffff;
+    transition: 0.3s;
+}
+.eyes-icon{
+    margin: 10px 0px;
+}
+@media screen and (max-width: 1430px) and (min-width: 1200px){
+    .section3-fonts{
+        width: 586px;
+        margin: auto;
+    }
+}   
+ @media screen and (max-width: 1200px) and (min-width: 992px){
+    .section3-fonts{
+        width: 586px;
+        margin: auto;
+    }
+    
+ }
+ @media screen and (max-width: 992px) and (min-width: 768px){
+    .section3-fonts{
+        width: 550px;
+        margin: auto;
+    }
+    
+ }
+ @media screen and (max-width: 768px) and (min-width: 576px){
+    .section3-fonts{
+        width: 500px;
+        margin: auto;
+    }
+    .iner-section3-font span{
+        font-size: 38px;
+        font-weight: 900;
+        text-align: center;
+    }
+ }
+ @media screen and (max-width: 576px) and (min-width: 425px){
+    .section3-fonts{
+        width: 400px;
+        margin: auto;
+    }
+    .iner-section3-font span{
+        font-size: 35px;
+        font-weight: 900;
+        text-align: center;
+    }
+ }
+ @media screen and (max-width: 425px){
+    .section3-fonts{
+        width: 290px;
+        margin: auto;
+    }
+    .iner-section3-font span{
+        font-size: 32px;
+        font-weight: 900;
+        text-align: center;
+    }
+ }
+/* =========================section3=end=================== */
+/* =========================section4=start=================== */
+
 /* =========================section4=end=================== */
